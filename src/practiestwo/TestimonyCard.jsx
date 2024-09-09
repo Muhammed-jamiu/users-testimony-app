@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
-// import {
-//   FaChevronRight,
-//   FaChevronLeft,
-//   FaQuoteRight,
-//   FaQuoteLeft,
-// } from "react-icons/fa";
+import {
+  FaChevronRight,
+  FaChevronLeft,
+  FaQuoteRight,
+  FaQuoteLeft,
+} from "react-icons/fa";
 
 import users from "./TestimonyData";
 function TestimonyCard() {
@@ -38,10 +38,10 @@ function TestimonyCard() {
         <h3>User</h3>
         <div className="image-con">
           <img src={image} />
-          {/* <span className="img-icon">
+          <span className="img-icon">
             <FaQuoteLeft className="icon text-white rotate-[30deg]" />
             <FaQuoteRight className="text-white rotate-[30deg] left-[195px] absolute icon" />
-          </span> */}
+          </span>
         </div>
         <p className=" name  text-lg text-black ">{name}</p>
         <p className=" email italic text-blue-900 hover:underline hover:cursor-pointer">
@@ -64,7 +64,7 @@ function TestimonyCard() {
             }}
             className="prev-btn"
           >
-            {/* <FaChevronLeft /> */}
+            <FaChevronLeft />
           </button>
           <button
             onClick={(e) => {
@@ -72,7 +72,7 @@ function TestimonyCard() {
             }}
             className="next-btn"
           >
-            {/* <FaChevronRight /> */}
+            <FaChevronRight />
           </button>
         </div>
         <div className="line-above h-[2px] mt-[6px] w-full bg-gray-600"></div>
